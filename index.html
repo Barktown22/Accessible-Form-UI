@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesible Form UI</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="left">
+        <label for="box1">Full name</label>
+        <input
+          class="box"
+          id="box1"
+          type="text"
+          placeholder="Enter name"
+          aria-required="Name required"
+        />
+
+        <label for="box2">Email</label>
+
+        <input
+          class="box"
+          id="box2"
+          type="email"
+          placeholder="Enter email"
+          aria-required="Email required"
+        />
+
+        <p class="error" id="error" aria-invalid="Email incorrect">
+          Email incorrect
+        </p>
+
+        <div class="password-wrapper1">
+          <label for="box3">Enter password</label>
+          <input
+            class="box"
+            id="box3"
+            type="password"
+            placeholder="Enter password"
+          />
+
+          <span class="passwordToggle1" id="passwordToggle1">👁️</span>
+        </div>
+
+        <div class="password-wrapper2">
+          <label for="box4">Confirm password</label>
+          <input
+            class="box"
+            id="box4"
+            type="password"
+            placeholder="Re-enter password"
+          />
+          <span class="passwordToggle2" id="passwordToggle2">👁️</span>
+        </div>
+
+        <button class="button" id="button1">Update profile</button>
+      </div>
+
+      <div class="right">
+        <div class="progress-wrapper">
+          <div class="progress-bar">65%</div>
+        </div>
+        <p class="pctext">Profile completeness</p>
+        <div class="checklist">
+          <p class="checklist-text" id="1">Create account</p>
+          <p class="checklist-text" id="2">Update roadmap progress</p>
+          <p class="checklist-text" id="3">Setup public profile</p>
+          <p class="checklist-text" id="4">Complete your first project</p>
+          <p class="checklist-text" id="5">Invite your freinds</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
